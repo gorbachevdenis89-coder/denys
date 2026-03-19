@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфоліо — Горбачов Денис</title>
+
+<style>
+
+/* Скидання стандартних стилів */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Times New Roman, sans-serif;
+
+background-image: url("https://www.hse.ru/data/2023/06/26/2075120778/3iStock-1435014643.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+.hero{
+background: rgba(255,255,255,0.8);
+padding:80px 20px;
+text-align:center;
+
+
+}
+/* Змінні кольорів */
+:root{
+--main:#1e2a38;
+--accent:#3498db;
+--light:#f4f4f4;
+}
+
+/* Навігація */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:var(--main);
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.nav-links a:hover{
+color:var(--accent);
+}
+
+/* Головний блок */
+.hero{
+background:var(--light);
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* Контент */
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:50px;
+}
+
+.section h2{
+margin-bottom:20px;
+color:var(--main);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:var(--accent);
+color:white;
+padding:8px 14px;
+border-radius:5px;
+}
+
+/* Проекти */
+.project{
+background: rgba(255,255,255,0);
+padding:15px;
+margin-bottom:15px;
+border-radius:5px;
+color:black;
+}
+/* Контакти */
+.contact{
+background:var(--light);
+padding:30px;
+border-radius:6px;
+}
+
+/* Футер */
+footer{
+background:var(--main);
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* Адаптація */
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links{
+flex-direction:column;
+margin-top:10px;
+}
+
+.nav-links li{
+margin:8px 0;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">Denys Horbachov</div>
+
+<ul class="nav-links">
+<li><a href="#about">Про мене</a></li>
+<li><a href="#skills">Навички</a></li>
+<li><a href="#projects">Проєкти</a></li>
+<li><a href="#contact">Контакти</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Портфоліо IT-студента</h1>
+<p>Горбачов Денис Павлович — студент 3 курсу спеціальності Комп'ютерні науки</p>
+<p>Херсонський Національний Технічний Університет</p>
+<img src="https://khersonci.com.ua/images/NEWS/04.2022/40a6b4a9a1f0acddc653a5129f5409df.jpg"
+</section>
+
+<div class="container">
+
+<section id="about" class="section">
+<h2>Про мене</h2>
+<p>
+Всім привіт, мене звати Денис Горбачов, народився і виріс у гарному місті Херсоні, закінчив у 2006 році ЗОШ №48. В 2007 році закінчив ліцей ХПЛ, назараз я студент 3-го курсу спеціальності "Комп'ютерні науки" у Херсонському Національному Технічному Університеті.
+Цікавлюся програмуванням, аналізом даних та розробкою програмного забезпечення.
+Працюю з мовами програмування Python, R, Java та C++.
+Також маю досвід роботи з мережевими технологіями та базами даних.
+</p>
+</section>
+
+<section id="skills" class="section">
+<h2>Навички</h2>
+
+<div class="skills">
+
+<div class="skill"><a href="https://www.python.org">Python</a></div>
+
+<div class="skill"><a href="https://www.r-project.org">R</a></div>
+
+<div class="skill"><a href="https://www.java.com">Java</a></div>
+
+<div class="skill"><a href="https://cplusplus.com">C++</a></div>
+
+<div class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></div>
+
+<div class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></div>
+
+<div class="skill"><a href="https://www.mysql.com">SQL</a></div>
+
+</div>
+<img src="https://media2.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
+</section>
+
+<section id="projects" class="section">
+<h2>Навчальні проєкти</h2>
+
+<div class="project">
+<strong>2D гра "Snake" на Python</strong>
+<p>Розробка класичної гри змійка з використанням бібліотеки Pygame.</p>
+<img src="https://repository-images.githubusercontent.com/1122425944/c4ac7514-d65b-41e8-8c0c-3aafc717ff11"
+width="400">
+</div>
+
+<div class="project">
+<strong>Аналіз даних у R</strong>
+<p>Побудова моделей класифікації та кластеризації з використанням алгоритмів K-means, PCA та XGBoost.</p>
+</div>
+
+<div class="project">
+<strong>ASCII-візуалізація сфери на C++</strong>
+<p>Створення 3D-візуалізації сфери в ASCII графіці з використанням паралельних обчислень.</p>
+<img src="https://images.steamusercontent.com/ugc/2303094744651689784/4FEAF16EB7A8B5AF7A857040097FBD92BA33B280/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+width="400">
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+<h2>Контакти</h2>
+
+<div class="contact">
+<p><b>Ім'я:</b> Горбачов Денис Павлович</p>
+<p><b>Університет:</b> 
+<a href="https://kntu.net.ua/" target="_blank">
+Херсонський Національний Технічний Університет
+</a>
+</p><p><b>Спеціальність:</b> Комп'ютерні науки</p>
+<p><b>Курс:</b> 3</p>
+<p><b>Email:</b> 
+<a href="https://mail.google.com/mail/?view=cm&to=gorbachev.denis89@gmail.com" target="_blank">
+gorbachev.denis89@gmail.com
+</a>
+</p></div>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Портфоліо студента Горбачова Дениса</p>
+</footer>
+
+</body>
+</html>
